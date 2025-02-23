@@ -1,0 +1,106 @@
+body {
+ background-color: #000000;
+ color:whitesmoke;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 20px;
+  background-color:#27374D;
+  border-radius: 15px;
+}
+
+
+main{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 2.4rem;
+  gap:2.4rem;
+}
+
+.box{
+  width:30%;
+  height:  calc(100vh - 14.4rem);
+  padding: 10px;
+  background-color:#151515;
+}
+
+.movieList{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  overflow-y:visible;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.image{
+  width:70px;
+}
+
+.movieitem{
+  display: grid;
+  list-style: none;
+  margin:10px;
+  grid-auto-flow: column;
+  place-content: start;
+  gap:1.4em;
+  border-bottom: 0.5px solid grey;
+}
+
+.moviesWatchedBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedMovieDisplay{
+  height:100%;
+  overflow-y:visible;
+  overflow-x: hidden;
+}
+.moviesWatchedStats{
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h5{
+  margin:0px;
+}
+
+.SelectedMovieInfo{
+  display: flex;
+  justify-content: space-around;
+}
+
+.SelectedMoviePlot{
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media  (min-width:761px) and (max-width:800px){
+  .box{
+    width:45%;
+  }
+}
+@media  (min-width:0px) and (max-width:426px){
+  header{
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .box{
+    width:100%;
+  }
+
+  main{
+    flex-direction: column; 
+  }
+  .SelectedMovieInfo{
+    flex-direction: column;
+    align-items: center;
+  }
+}
